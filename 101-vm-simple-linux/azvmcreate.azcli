@@ -1,0 +1,4 @@
+az group deployment create --name mifurmdep3 \
+-g mfrg3 --template-file azuredeploy.json \
+ --parameters azuredeploy.parameters.json 
+

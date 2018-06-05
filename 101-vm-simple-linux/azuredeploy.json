@@ -22,11 +22,9 @@
     },
     "ubuntuOSVersion": {
       "type": "string",
-      "defaultValue": "14.04.2-LTS",
+      "defaultValue": "7.3",
       "allowedValues": [
-        "12.04.5-LTS",
-        "14.04.2-LTS",
-        "15.10"
+        "7.3"
       ],
       "metadata": {
         "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version. Allowed values: 12.04.5-LTS, 14.04.2-LTS, 15.10."
@@ -37,8 +35,8 @@
     "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm')]",
     "location": "[resourceGroup().location]",
     "dataDisk1VhdName": "datadisk1",
-    "imagePublisher": "Canonical",
-    "imageOffer": "UbuntuServer",
+    "imagePublisher": "OpenLogic",
+    "imageOffer": "CentOS",
     "OSDiskName": "osdiskforlinuxsimple",
     "nicName": "myVMNic",
     "addressPrefix": "10.0.0.0/16",
@@ -49,7 +47,7 @@
     "publicIPAddressType": "Dynamic",
     "vmStorageAccountContainerName": "vhds",
     "vmName": "MyUbuntuVM",
-    "vmSize": "Standard_D1",
+    "vmSize": "Standard_A1",
     "virtualNetworkName": "MyVNET",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",

@@ -6,13 +6,13 @@
       "value": "azureUser"
     },
     "adminPassword": {
-      "value": "GEN-PASSWORD"
+      "value": "wdrozenie123!@#super"
     },
     "dnsLabelPrefix": {
-      "value": "GEN-UNIQUE"
+      "value": "mifurmlab"
     },
     "ubuntuOSVersion": {
-      "value": "14.04.2-LTS"
+      "value": "7.3"
     }
   }
 }
